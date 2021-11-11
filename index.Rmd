@@ -1,30 +1,51 @@
 ---
-title: "WASTtest"
-author: "David Florentin"
-date: "11/11/2021"
-output: html_document
+title: "Networked Data Lab: Mental health crises in children and teenagers"
+author: "Public Health Wales"
+date: "`r Sys.Date()`"
+output:
+  prettydoc::html_pretty:
+    highlight: github
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+#Load packages
+library("tidyverse")
+library("plotly")
+library("rmarkdown")
+library("knitr")
+library("scales")
+library("viridis")
+#Load WAST data
 ```
 
-## R Markdown
+## Data sources
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+These are the following data sources used for this project.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+- PEDW
+- WAST
+- ED
+- And others
 
-```{r cars}
-summary(cars)
+## Share of ambulance calls related to mental health
+
+```{r WAST.preview, echo=FALSE, message=FALSE, warning=FALSE}
+#Display underlying data in a table
+
 ```
 
-## Including Plots
+## About the Networked Data Lab
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+The [Networked Data Lab](https://www.health.org.uk/funding-and-partnerships/our-partnerships/the-networked-data-lab) is a Health Foundation funded collaboration between five analytical partners in the UK.
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
